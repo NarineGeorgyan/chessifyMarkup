@@ -1,0 +1,92 @@
+.footer-logo {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+.nav-wrapper {
+  display: flex;
+  gap: 1.5rem;
+}
+.footer-nav {
+  gap: 1.5rem;
+  align-items: center;
+}
+.icons-nav-link {
+  display: inline-block;
+}
+.icons-nav-link:hover,
+.icons-nav-link:visited {
+  background-color: #8c358c;
+}
+.copyright {
+  font-size: 0.875rem;
+  line-height: 1.225rem;
+  opacity: 0.6;
+}
+.copyright {
+  color: #000;
+}
+.mailto,
+.copyright {
+  display: inline-block;
+}
+.mailto {
+  margin-right: 1.5rem;
+}
+.mailto-link:link,
+.mailto-link:visited {
+  font: inherit;
+  color: rgba(31, 31, 37, 1);
+  font-size: 0.875rem;
+  line-height: 1.225rem;
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+
+.mailto a:active,
+.mailto a:hover {
+  color: #358c65;
+}
+
+.app {
+  background-image: url("https://chessify.me/dg_static/website/assets/images/app_store.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 8.125rem;
+  height: 2.5rem;
+  margin-right: 1.25rem;
+}
+.google {
+  background-image: url("https://chessify.me/dg_static/website/assets/images/google_play.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 8.125rem;
+  height: 2.5rem;
+}
+@media (max-width: 34rem) {
+  .footer-logo {
+    margin-bottom: 2rem;
+  }
+  .footer-logo {
+    gap: 1.312;
+  }
+  .nav-wrapper {
+    max-width: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-wrapper .footer-nav,
+  .store {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .copyright {
+    opacity: 0.4;
+    align-items: center;
+  }
+  .end {
+    text-align: center;
+  }
+}

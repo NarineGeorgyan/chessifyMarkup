@@ -1,0 +1,93 @@
+.primary-heading {
+  font-size: 4rem;
+  line-height: 4rem;
+  text-transform: capitalize;
+  margin-bottom: 2.5rem;
+}
+.chess-image {
+  max-width: 80rem;
+  min-height: 22.75rem;
+
+  background: url("../images/image-187.png") no-repeat top left;
+  border-radius: 12px;
+
+  overflow: hidden;
+  position: relative;
+}
+.layout {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(90deg, #000 40%, transparent 60%);
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+.box {
+  padding: 2rem;
+}
+
+.box a:link,
+.box a:visited {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  margin-right: 1rem;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 0.75rem;
+  line-height: 1.05rem;
+  letter-spacing: 2%;
+  text-transform: uppercase;
+  background-color: #358c65;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.box a:hover,
+.box a:active {
+  opacity: 0.9;
+}
+.box span {
+  font-size: 0.75rem;
+  line-height: 1.05rem;
+  letter-spacing: 2%;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.box p {
+  margin-top: 10rem;
+  padding: 0.25rem 0;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.6255rem;
+  position: relative;
+  color: #fff;
+  z-index: 2;
+}
+.box p strong {
+  display: block;
+}
+@media (max-width: 34rem) {
+  .primary-heading {
+    padding: 0 0 0 1rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  .chess-image {
+    border-radius: 0px;
+    background-position: top left;
+  }
+  .box a:link,
+  .box a:visited {
+    margin-right: 1.5rem;
+    padding: 1rem 2rem;
+  }
+
+  .box p {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
